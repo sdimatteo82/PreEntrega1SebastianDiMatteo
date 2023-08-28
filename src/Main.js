@@ -18,9 +18,7 @@ function Main() {
   } else {
     return (
       <main className="p-2 grow">
-        <button onClick={toogleMenu} className="border p-1 rounded bg-red">
-          toogle Menu
-        </button>
+        <button onClick={toogleMenu}>toogle Menu</button>
         <ul>
           <li>Nosotros</li>
           <li>Productos</li>

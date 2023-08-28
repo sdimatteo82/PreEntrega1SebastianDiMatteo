@@ -1,6 +1,7 @@
 import React from "react";
 import NavLinks from "./NavLinks";
 import CartWidget from "./components/CartWidget";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,7 +9,10 @@ function Header() {
       id="header"
       className="header flex justify-between py-4 px-2 bg-slate-800 text-white"
     >
-      <h1>Mi Pagina</h1>
+      <Link to={"/"}>
+        <h1>Motor Sport Deluxe</h1>
+      </Link>
+
       <NavLinks />
       <CartWidget />
     </header>
