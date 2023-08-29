@@ -17,7 +17,7 @@ function NavLinks() {
         Motos
       </NavLink>
       <NavLink
-        to={"/category/moto de agua"}
+        to={"/category/moto_de_agua"}
         className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
       >
         PWC

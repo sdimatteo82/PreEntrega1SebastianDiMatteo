@@ -39,7 +39,7 @@ const products = [
     id: "5",
     name: " Seadoo",
     price: "15.000",
-    category: "Moto de Agua",
+    category: "moto_de_agua",
     img: "https://media.istockphoto.com/id/98462741/es/foto/hermosa-chica-montando-su-motos-acu%C3%A1ticas.jpg?b=1&s=612x612&w=0&k=20&c=VcaQtj8r6xV8lP2c-vWU4-zBYiEJiiD9XmGkXLaV3_A=",
     stock: "5",
     description: "Seadoo 800",
@@ -48,7 +48,7 @@ const products = [
     id: "6",
     name: "Kawasaki",
     price: "1.000",
-    category: "Moto de Agua",
+    category: "moto_de_agua",
     img: "https://media.istockphoto.com/id/1344020131/es/foto/vista-a%C3%A9rea-de-la-moto-acu%C3%A1tica-en-el-mar-azul-jet-ski-en-turquesa-de-aguas-claras-racing-foto.jpg?b=1&s=612x612&w=0&k=20&c=OFoLHP7Xp4mX91lViYAblTCjTY9Rt533lDac9oEpVA4=",
     stock: "3",
     description: "Kawasaki Ninja",
@@ -73,7 +73,7 @@ export const GetProductById = (productId) => {
 export const getProductByCategory = (productId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(products.find((prod) => prod.id === productId));
+      resolve(products.filter((prod) => prod.category === productId));
     }, 500);
   });
 };

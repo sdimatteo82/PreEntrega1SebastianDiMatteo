@@ -12,11 +12,10 @@ function App() {
       <Main />
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
-        <Route path="/categry/:categoryId" element={<ItemListContainer />} />
+        <Route path="/category/:categoryId" element={<ItemListContainer />} />
         <Route path="item/:itemId" element={<ItemDetailContainer />} />
         <Route path="*" element={<h1>404 not found</h1>} />
       </Routes>
-      {<ItemListContainer greeting={"Bienvenido"} />}
 
       <Footer />
     </BrowserRouter>
