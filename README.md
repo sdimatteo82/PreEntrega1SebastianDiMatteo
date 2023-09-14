@@ -12,8 +12,7 @@ Como tecnologias utilizadas para el desarrollo del proyecto, encontramos React: 
 
 Instucciones:
 bash
-git clone // https://github.com/sdimatteo82/proyectofinalDimatteo.git
-cd tu-proyecto
+git clone // https://github.com/sdimatteo82/PreEntrega1SebastianDiMatteo.git
 npm install
 npm start.
 
